@@ -15,7 +15,7 @@ function preview() {
 }
 
 function save() {
-    const card = { to: recipient.value, from: sender.value, title: title.value, subtitle: subtitle.value, message: message.value };
+    let card = { to: recipient.value, from: sender.value, title: title.value, subtitle: subtitle.value, message: message.value };
     let cards = localStorage.getItem('cards');
     if (cards == null) {
         cards = [card];
